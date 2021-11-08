@@ -1,16 +1,13 @@
-# This is a sample Python script.
+from config import open_weather_token #import api token
+import requests# pip install requests in Terminal
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+#Создаем функцию, принимающую 2 параметра: город и токен
+def get_weateher(city, open_weather_token):
+    pass
 
+def main():
+    city = input("Введите город: ")#Запрос ввода названия города
+    get_weateher(city, open_weather_token)#Вызов функции
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if __name__ == '__main__':#Точка входа в программу
+    main()#Вызов функции
