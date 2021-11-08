@@ -10,7 +10,7 @@ dp = Dispatcher(bot) #создаем объект диспетчера и пер
 
 @dp.message_handler(commands=["start"])
 async def start_command(message: types.Message):#функция ответа на команду start
-    await message.reply("Введи название города на англиском языке и получишь текущий прогноз погоды")
+    await message.reply("Введи название города на англиском языке и получишь текущий прогноз погоды (например, Minsk)")
 
 @dp.message_handler()
 async def get_weather(message: types.Message):
