@@ -3,7 +3,10 @@ import requests# pip install requests in Terminal
 
 #Создаем функцию, принимающую 2 параметра: город и токен
 def get_weateher(city, open_weather_token):
-    pass
+    try:
+    except Exception as ex:
+        print(ex)
+        print("Проверьте название города!!!")#Вывод сообщения об ошибке
 
 def main():
     city = input("Введите город: ")#Запрос ввода названия города
