@@ -1,4 +1,5 @@
 from config import open_weather_token #import api token
+from pprint import pprint #модуль для аккуратного отображения данных
 import requests# pip install requests in Terminal
 
 #Создаем функцию, принимающую 2 параметра: город и токен
@@ -8,7 +9,7 @@ def get_weateher(city, open_weather_token):
             f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={open_weather_token}"
         )
         data = r.json() #получаем данные в формате json и записываем их в переменную data
-        print(data)
+        pprint(data)
 
     except Exception as ex:
         print(ex)
